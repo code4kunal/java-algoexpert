@@ -4,6 +4,7 @@ import java.util.*;
 
 public class arrayOfProducts {
     public static int[] arrayOfProducts(int[] array) {
+        String s = "myString";
         List<Integer> result = new ArrayList<>();
         int i = 0;
         while ( i < array.length){
@@ -16,7 +17,7 @@ public class arrayOfProducts {
                 }
             }
             result.add(product);
-            product =1;
+            product = 1;
             i++;
         }
         return result.stream().mapToInt(in-> in).toArray();
